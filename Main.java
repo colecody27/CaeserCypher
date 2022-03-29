@@ -95,7 +95,9 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		String message = "tomorrow";
 		String encryptedMessage = Encrypt(message, 6);
-
+		String decryptedMesssage = Decrypt(encryptedMessage, 6);
+		println("Encrypted message: " + encryptedMessage);
+		println("Decrypted message: " + decryptedMesssage);
 		println("Encrypted key is: " + FindDecryptKey(encryptedMessage, 10));
 	}
 
